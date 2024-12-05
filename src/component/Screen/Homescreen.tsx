@@ -169,7 +169,11 @@ const HomeScreen = ({navigation}: {navigation: any}) => {
         },
       })}>
       <Tab.Screen name="Home" component={MainScreen} />
-      <Tab.Screen name="Settings" component={SettingScreen} />
+      <Tab.Screen
+        name="Settings"
+        component={SettingScreen}
+        options={{tabBarStyle: {display: 'none'}}}
+      />
       <Tab.Screen name="Rooms" component={RoomScreen} />
     </Tab.Navigator>
   );
